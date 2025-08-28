@@ -1,0 +1,76 @@
++------------------+
+|     Autor        |
++------------------+
+| - nome           |
+| - nacionalidade  |
+| - anoNascimento  |
++------------------+
+
+
+
++------------------+
+|     Livro        |
++------------------+
+| - titulo         |
+| - autor          |
+| - ano            |
+| - genero         |
+| - totalEmprestimos |
+| #disponivel      |
+| #emprestadoPara  |
++------------------+
+| +get disponibilidade() |
+| +set disponibilidade() |
+| +registrarEmprestimo() |
++------------------+
+
+
+
+
++------------------+
+|    Usuario       |
++------------------+
+| - nome           |
+| - matricula      |
+| #historico       |
++------------------+
+| +gerarMatricula()|
+| +adicionarEmprestimo()|
+| +tipoUsuario()   |
++------------------+
+        ▲
+        │
++----------------------+
+|  UsuarioAluno        |
++----------------------+
+| +tipoUsuario()       |
+| +gerarMatricula()    |
++----------------------+
+        ▲
+        │
++----------------------+
+| UsuarioProfessor     |
++----------------------+
+| +tipoUsuario()       |
+| +gerarMatricula()    |
++----------------------+
+
+
+
+
+
+
++------------------+
+|  Biblioteca      |
++------------------+
+| - usuarios       |
+| - livros         |
+| - autores        |
++------------------+
+| +salvarDados()   |
+| +cadastrarLivro()|
+| +cadastrarUsuario()|
+| +cadastrarAutor()|
+| +emprestarLivro()|
+| +devolverLivro() |
++------------------+
